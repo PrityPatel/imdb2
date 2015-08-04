@@ -71,18 +71,18 @@ ActiveRecord::Base.transaction do
   # Reviews
   Review.create(
     body: 'It has often been said that Wes Anderson walks the fine line between folly and genius. In the "Grand Budapest Hotel", however, this distinction no longer exists: the ridiculous becomes brilliant, and brilliant has never been this ridiculous.',
-    user_id: brooks,
-    movie_id: the_grand_budapest_hotel
+    user: brooks,
+    movie: the_grand_budapest_hotel
   )
   Review.create(
     body: 'I for for one really enjoyed this movie. I saw it at a screening in Toronto. If you were a fan of Garden State you will love this movie. ',
-    user_id: otto,
-    movie_id: wish_i_was_here
+    user: otto,
+    movie: wish_i_was_here
   )
   Review.create(
     body: 'Emilioooooh!',
-    user_id: luna,
-    movie_id: a_night_at_the_roxbury
+    user: luna,
+    movie: a_night_at_the_roxbury
   )
 
   puts 'Successfully added seed data'
